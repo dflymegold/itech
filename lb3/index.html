@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>Гаршанов lb3</title>
+    <link href="index.css" rel="stylesheet"/>
+    <style type="text/css">
+        body {
+            background-color: #ffe6ac;
+        }
+    </style>
+</head>
+<body>
+
+
+<ul class="div1" id="numbers">
+    <li><img height="100px" width="100px"
+             src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Icon_1_%28set_orange%29.png"
+             alt=""/>
+        <button onclick="up(0)"><img width="13" height="13"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Green-Up-Arrow.svg/1077px-Green-Up-Arrow.svg.png"
+                                     alt="up"
+                                     style="vertical-align: middle"></button>
+        <button onclick="down(0)"><img width="13" height="13"
+                                       src="https://www.brainyvestors.com/images/aadt_down.png" alt="down"
+                                       style="vertical-align: middle"></button>
+        <input id="width0" name="width" placeholder="width" pattern="[0-9]+"
+               maxlength="10" size="3"/>
+        <input id="height0" name="height" placeholder="height" pattern="[0-9]+"
+               maxlength="10" size="3"/>
+        <button onclick="setSize(0)"><img width="13" height="13"
+                                          src="https://img.icons8.com/metro/452/checkmark.png" alt="Ok"
+                                          style="vertical-align: middle"></button>
+    </li>
+    <li><img height="100px" width="100px"
+             src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Icon_2_%28set_basic%29.png"
+             alt=""/>
+        <button onclick="up(1)"><img width="13" height="13"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Green-Up-Arrow.svg/1077px-Green-Up-Arrow.svg.png"
+                                     alt="up"
+                                     style="vertical-align: middle"></button>
+        <button onclick="down(1)"><img width="13" height="13"
+                                       src="https://www.brainyvestors.com/images/aadt_down.png" alt="down"
+                                       style="vertical-align: middle"></button>
+        <input id="width1" name="width" placeholder="width" pattern="[0-9]+"
+               maxlength="10" size="3"/>
+        <input id="height1" name="height" placeholder="height" pattern="[0-9]+"
+               maxlength="10" size="3"/>
+        <button onclick="setSize(1)"><img width="13" height="13"
+                                          src="https://img.icons8.com/metro/452/checkmark.png" alt="Ok"
+                                          style="vertical-align: middle"></button>
+    </li>
+    <li><img height="100px" width="100px" src="https://cdn.pixabay.com/photo/2012/04/23/17/07/three-39116_960_720.png"
+             alt=""/>
+        <button onclick="up(2)"><img width="13" height="13"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Green-Up-Arrow.svg/1077px-Green-Up-Arrow.svg.png"
+                                     alt="up"
+                                     style="vertical-align: middle"></button>
+        <button onclick="down(2)"><img width="13" height="13"
+                                       src="https://www.brainyvestors.com/images/aadt_down.png" alt="down"
+                                       style="vertical-align: middle"></button>
+        <input id="width2" name="width" placeholder="width" pattern="[0-9]+"
+               maxlength="10" size="3"/>
+        <input id="height2" name="height" placeholder="height" pattern="[0-9]+"
+               maxlength="10" size="3"/>
+        <button onclick="setSize(2)"><img width="13" height="13"
+                                          src="https://img.icons8.com/metro/452/checkmark.png" alt="Ok"
+                                          style="vertical-align: middle"></button>
+    </li>
+    <li><img height="100px" width="100px" src="https://pngimg.com/uploads/number4/number4_PNG15023.png" alt=""/>
+        <button onclick="up(3)"><img width="13" height="13"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Green-Up-Arrow.svg/1077px-Green-Up-Arrow.svg.png"
+                                     alt="up"
+                                     style="vertical-align: middle"></button>
+        <button onclick="down(3)"><img width="13" height="13"
+                                       src="https://www.brainyvestors.com/images/aadt_down.png" alt="down"
+                                       style="vertical-align: middle"></button>
+        <input id="width3" name="width" placeholder="width" pattern="[0-9]+"
+               maxlength="10" size="3"/>
+        <input id="height3" name="height" placeholder="height" pattern="[0-9]+"
+               maxlength="10" size="3"/>
+        <button onclick="setSize(3)"><img width="13" height="13"
+                                          src="https://img.icons8.com/metro/452/checkmark.png" alt="Ok"
+                                          style="vertical-align: middle"></button>
+    </li>
+    <li><img height="100px" width="100px" src="https://pngimg.com/uploads/number5/number5_PNG15064.png" alt=""/>
+        <button onclick="up(4)"><img width="13" height="13"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Green-Up-Arrow.svg/1077px-Green-Up-Arrow.svg.png"
+                                     alt="up"
+                                     style="vertical-align: middle"></button>
+        <button onclick="down(4)"><img width="13" height="13"
+                                       src="https://www.brainyvestors.com/images/aadt_down.png" alt="down"
+                                       style="vertical-align: middle"></button>
+        <input id="width4" name="width" placeholder="width" pattern="[0-9]+"
+               maxlength="10" size="3"/>
+        <input id="height4" name="height" placeholder="height" pattern="[0-9]+"
+               maxlength="10" size="3"/>
+        <button onclick="setSize(4)"><img width="13" height="13"
+                                          src="https://img.icons8.com/metro/452/checkmark.png" alt="Ok"
+                                          style="vertical-align: middle"></button>
+    </li>
+    <li><img height="100px" width="100px" src="https://pngimg.com/uploads/number6/number6_PNG18576.png" alt=""/>
+        <button onclick="up(5)"><img width="13" height="13"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Green-Up-Arrow.svg/1077px-Green-Up-Arrow.svg.png"
+                                     alt="up"
+                                     style="vertical-align: middle"></button>
+        <button onclick="down(5)"><img width="13" height="13"
+                                       src="https://www.brainyvestors.com/images/aadt_down.png" alt="down"
+                                       style="vertical-align: middle"></button>
+        <input id="width5" name="width" placeholder="width" pattern="[0-9]+"
+               maxlength="10" size="3"/>
+        <input id="height5" name="height" placeholder="height" pattern="[0-9]+"
+               maxlength="10" size="3"/>
+        <button onclick="setSize(5)"><img width="13" height="13"
+                                          src="https://img.icons8.com/metro/452/checkmark.png" alt="Ok"
+                                          style="vertical-align: middle"></button>
+    </li>
+    <li><img height="100px" width="100px" src="https://pngimg.com/uploads/number7/number7_PNG18643.png" alt=""/>
+        <button onclick="up(6)"><img width="13" height="13"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Green-Up-Arrow.svg/1077px-Green-Up-Arrow.svg.png"
+                                     alt="up"
+                                     style="vertical-align: middle"></button>
+        <button onclick="down(6)"><img width="13" height="13"
+                                       src="https://www.brainyvestors.com/images/aadt_down.png" alt="down"
+                                       style="vertical-align: middle"></button>
+        <input id="width6" name="width" placeholder="width" pattern="[0-9]+"
+               maxlength="10" size="3"/>
+        <input id="height6" name="height" placeholder="height" pattern="[0-9]+"
+               maxlength="10" size="3"/>
+        <button onclick="setSize(6)"><img width="13" height="13"
+                                          src="https://img.icons8.com/metro/452/checkmark.png" alt="Ok"
+                                          style="vertical-align: middle"></button>
+    </li>
+</ul>
+
+
+<script>
+    function down(elementNumber) {
+        const numbers = document.querySelector('#numbers');
+        const list = Array.from(numbers.children);
+        if (elementNumber === list.length - 1) {
+            const x = Array.from(list[elementNumber].children)[0].getAttribute("src");
+            Array.from(list[elementNumber].children)[0].setAttribute("src", Array.from(list[0].children)[0].getAttribute("src"));
+            Array.from(list[0].children)[0].setAttribute("src", x);
+        }
+        const x = Array.from(list[elementNumber].children)[0].getAttribute("src");
+        Array.from(list[elementNumber].children)[0].setAttribute("src", Array.from(list[elementNumber + 1].children)[0].getAttribute("src"));
+        Array.from(list[elementNumber + 1].children)[0].setAttribute("src", x);
+    }
+
+    function up(elementNumber) {
+        const numbers = document.querySelector('#numbers');
+        const list = Array.from(numbers.children);
+        if (elementNumber === 0) {
+            const x = Array.from(list[elementNumber].children)[0].getAttribute("src");
+            Array.from(list[elementNumber].children)[0].setAttribute("src", Array.from(list[list.length - 1].children)[0].getAttribute("src"));
+            Array.from(list[list.length - 1].children)[0].setAttribute("src", x);
+        }
+        const x = Array.from(list[elementNumber].children)[0].getAttribute("src");
+        Array.from(list[elementNumber].children)[0].setAttribute("src", Array.from(list[elementNumber - 1].children)[0].getAttribute("src"));
+        Array.from(list[elementNumber - 1].children)[0].setAttribute("src", x);
+    }
+
+    function setSize(elementNumber) {//you need to check if the element number = 0 then-> go to the end to the list
+        const numbers = document.querySelector('#numbers');
+        const list = Array.from(numbers.children);
+        Array.from(list[elementNumber].children)[0].setAttribute("height", document.getElementById(("height" + elementNumber)).value);
+        Array.from(list[elementNumber].children)[0].setAttribute("width", document.getElementById(("width" + elementNumber)).value);
+    }
+</script>
+
+
+</body>
+</html>

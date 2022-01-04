@@ -1,0 +1,23 @@
+div {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+input:invalid {
+    border: 1px dashed red;
+}
+
+input:valid {
+    background-image: linear-gradient(to left, pink, lightgreen);
+    border: 1px solid green;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
