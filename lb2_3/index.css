@@ -1,0 +1,77 @@
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin:auto;
+}
+
+input[type=submit] {
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    border:none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+    width: calc(100% - 4px);
+    position:absolute;
+
+    bottom: 0px;
+    left: 0px;
+    margin: 2px;
+
+}
+
+input[type=submit]:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.column {
+    float: left;
+    width: 25%;
+
+    padding-top: 200px;
+    padding-left: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -5px;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: chocolate;
+    border-radius: 5px;
+    height: 220px;
+    position: relative;
+
+}
